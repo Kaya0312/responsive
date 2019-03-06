@@ -1,0 +1,28 @@
+.hero {
+    background-color: red;
+}
+main {
+    .product {
+        &_inner {
+
+            background-color: green;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+    }
+
+    .description {
+        background-color: violet;
+
+        &_inner {
+            max-width: 980px;
+            margin: 0 auto;
+        }
+    }
+    .contact {
+        background-color: orange;
+    }
+}
+footer {
+    background-color: yellow;
+}

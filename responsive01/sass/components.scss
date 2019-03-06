@@ -1,0 +1,91 @@
+
+.hero {
+    background: url(../images/top/main.jpg) no-repeat center center;
+    background-size:cover;
+    color: #fff;
+
+    header {
+        text-align: center;
+        margin: 0 0 5rem 0;
+    }
+
+    .copy {
+        
+        &_inner {
+            display: flex;
+            margin: 0 auto;
+            width: 980px;
+        }
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+main {
+
+    .product {
+
+        &_inner {       
+            
+            display: flex;
+            justify-content: space-between;
+        
+            text-align: center;
+    
+        }
+    
+        &_item {
+            width: 300px;
+        }
+    }
+
+
+
+    .heading {
+        background-color: #C54B3C;
+        text-align: center;
+        color: #fff;
+        padding: 3rem 0;
+    }
+
+
+    .description {
+        &_title {
+            background: #393B47;
+            text-align: center;
+            color: #fff;
+            padding: 3rem 0;
+            font-size: 200%;
+        }
+
+        &_inner {
+            display: flex;
+        }
+        &_item {
+            color: #fff;
+
+            &:first-of-type,
+            &:nth-of-type(3) {
+                background: #393B47;
+            }
+
+            &_txt {
+                width: 60%;
+            }
+        }
+    }
+}
+
