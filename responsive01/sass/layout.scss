@@ -1,11 +1,18 @@
+header {
+    .logo {
+        width: 100px;
+    }
+}
+
 .hero {
     background-color: red;
+
+    
 }
 main {
     .product {
         &_inner {
 
-            background-color: green;
             max-width: 980px;
             margin: 0 auto;
         }
@@ -15,14 +22,24 @@ main {
         background-color: violet;
 
         &_inner {
-            max-width: 980px;
+            max-width: 700px;
             margin: 0 auto;
         }
     }
+
     .contact {
-        background-color: orange;
+        padding: 0 0 2rem 0;
+        
+        &_inner {
+            width: 700px;
+            margin: 0 auto;
+        }
     }
 }
+
 footer {
-    background-color: yellow;
+   text-align: center;
+   padding: 2rem 0;
+   color: #C54B3C;
+   font-size: 80%;
 }

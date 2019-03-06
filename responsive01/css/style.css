@@ -1,31 +1,39 @@
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Karla', sans-serif;
   font-size: 16px; }
 
 img {
-  width: 10%;
+  width: 100%;
   max-width: 100%;
   height: auto; }
+
+header .logo {
+  width: 100px; }
 
 .hero {
   background-color: red; }
 
 main .product_inner {
-  background-color: green;
   max-width: 980px;
   margin: 0 auto; }
 
 main .description {
   background-color: violet; }
   main .description_inner {
-    max-width: 980px;
+    max-width: 700px;
     margin: 0 auto; }
 
 main .contact {
-  background-color: orange; }
+  padding: 0 0 2rem 0; }
+  main .contact_inner {
+    width: 700px;
+    margin: 0 auto; }
 
 footer {
-  background-color: yellow; }
+  text-align: center;
+  padding: 2rem 0;
+  color: #C54B3C;
+  font-size: 80%; }
 
 .hero {
   background: url(../images/top/main.jpg) no-repeat center center;
@@ -39,6 +47,10 @@ footer {
     margin: 0 auto;
     width: 980px; }
 
+main .product svg {
+  fill: yellow;
+  width: 500px; }
+
 main .product_inner {
   display: flex;
   justify-content: space-between;
@@ -46,6 +58,11 @@ main .product_inner {
 
 main .product_item {
   width: 300px; }
+  main .product_item .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #C54B3C; }
 
 main .heading {
   background-color: #C54B3C;
@@ -53,19 +70,52 @@ main .heading {
   color: #fff;
   padding: 3rem 0; }
 
-main .description_title {
-  background: #393B47;
-  text-align: center;
-  color: #fff;
-  padding: 3rem 0;
-  font-size: 200%; }
+main .description {
+  line-height: 1.6; }
+  main .description_title {
+    background: #393B47;
+    text-align: center;
+    color: #fff;
+    padding: 3rem 0;
+    font-size: 200%; }
+  main .description_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  main .description_item {
+    color: #fff; }
+    main .description_item:first-of-type, main .description_item:nth-of-type(3) {
+      background: #393B47; }
+    main .description_item:nth-of-type(2) {
+      background: #2B2E37;
+      padding: 4rem 0 0 0; }
+    main .description_item_txt {
+      width: 30%;
+      margin-right: auto; }
+      main .description_item_txt_heading {
+        margin: 0 0 1rem 0;
+        font-size: 150%; }
+    main .description_item img {
+      width: 400px; }
 
-main .description_inner {
-  display: flex; }
-
-main .description_item {
+main .contact {
+  background-color: #C54B3C;
   color: #fff; }
-  main .description_item:first-of-type, main .description_item:nth-of-type(3) {
-    background: #393B47; }
-  main .description_item_txt {
-    width: 60%; }
+  main .contact_title {
+    font-size: 200%;
+    text-align: center;
+    padding: 3rem 0; }
+  main .contact input, main .contact textarea {
+    width: 100%;
+    border: none;
+    margin: 0 0 1.5rem 0;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2) inset; }
+  main .contact input[type="submit"] {
+    width: 10%;
+    background: #B04638;
+    color: #fff;
+    box-shadow: none; }
+  main .contact p {
+    margin-bottom: 10px; }

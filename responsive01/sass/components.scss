@@ -18,26 +18,16 @@
         }
     }
 
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
 
 
 main {
 
     .product {
-
+        svg {
+            fill: yellow;
+            width: 500px;
+        }
         &_inner {       
             
             display: flex;
@@ -49,6 +39,15 @@ main {
     
         &_item {
             width: 300px;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #C54B3C;
+
+
+            }
         }
     }
 
@@ -63,6 +62,8 @@ main {
 
 
     .description {
+        line-height: 1.6;
+
         &_title {
             background: #393B47;
             text-align: center;
@@ -73,6 +74,9 @@ main {
 
         &_inner {
             display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
         &_item {
             color: #fff;
@@ -81,10 +85,53 @@ main {
             &:nth-of-type(3) {
                 background: #393B47;
             }
+            &:nth-of-type(2) {
+                background: #2B2E37;
+                padding: 4rem 0 0 0;
+            }            
 
             &_txt {
-                width: 60%;
+                width: 30%;
+                margin-right: auto;
+
+                &_heading {
+                    margin: 0 0 1rem 0;
+                    font-size: 150%;
+                }
             }
+
+            img {
+                width: 400px;
+            }
+        }
+    }
+
+    .contact {
+        background-color: #C54B3C;
+        color: #fff;
+
+        &_title {
+            font-size: 200%;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        input,textarea {
+            width: 100%;
+            border: none;
+            margin: 0 0 1.5rem 0;
+            padding: 10px;
+            border-radius: 3px;
+            box-shadow: 1px 1px 1px rgba(0,0,0,0.2) inset;
+        }
+        input[type="submit"] {
+            width: 10%;
+            background: #B04638;
+            color: #fff;
+            box-shadow: none;
+        }
+        p {
+            margin-bottom: 10px;
         }
     }
 }

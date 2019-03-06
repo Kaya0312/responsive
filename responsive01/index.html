@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet"> 
     <title>Document</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
 
         <div class="hero">
             <header>
-                <img src="images/common/logo.png" alt="">
+                <img src="images/common/logo.png" alt="" class="logo">
                 <p class="header_txt"></p>
                 <h1 class="header_title">TinyLove</h1>
                 <ul class="sns">
@@ -25,7 +25,7 @@
             </header>
             <div class="copy">
                 <div class="copy_inner">
-                <img src="images/top/1503496380Hand-Holding-Smartphone-Mobile-Png-Image-1.png" alt="">
+                <img src="images/top/1503496380Hand-Holding-Smartphone-Mobile-Png-Image-1.png" alt="" >
 
                 <div class="copy_txt">
                     <h2 class="copy_title">Enticing statement goes here.</h2>
@@ -48,19 +48,21 @@
             <section class="product">
                 <div class="product_inner">
                 <div class="product_item">
-                    <svg></svg>
+                        <svg class="user-nav__icon">
+                                <use xlink:href="images/icon/#icon-office"></use>
+                            </svg>
                     <h3 class="product_item_title">Secont Title</h3>
                     <p class="product_item_subtitle">Heading of this section</p>
                     <div class="product_item_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore iste assumenda fugiat recusandae? Repellat vero aut commodi magnam, reprehenderit ducimus doloribus, fuga, laboriosam delectus quae laudantium explicabo doloremque! Molestias!</div>
                 </div>
                 <div class="product_item">
-                    <svg></svg>
+                        <div class="icon"><img src="images/icon/document.svg"></div> 
                     <h3 class="product_item_title">Secont Title</h3>
                     <p class="product_item_subtitle"Heading of this section>Heading of this section</p>
                     <div class="product_item_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore iste assumenda fugiat recusandae? Repellat vero aut commodi magnam, reprehenderit ducimus doloribus, fuga, laboriosam delectus quae laudantium explicabo doloremque! Molestias!</div>
                 </div>
                 <div class="product_item">
-                    <svg></svg>
+                        <div class="icon"><img src="images/icon/home.svg"></div> 
                     <h3 class="product_item_title">Secont Title</h3>
                     <p class="product_item_subtitle">Heading of this section</p>
                     <div class="product_item_txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non dolore iste assumenda fugiat recusandae? Repellat vero aut commodi magnam, reprehenderit ducimus doloribus, fuga, laboriosam delectus quae laudantium explicabo doloremque! Molestias!</div>
@@ -78,46 +80,47 @@
                 <h3 class="description_title">See how it works</h3>
 
                 <div class="description_item">
-                        <div class="description_inner">
-                    <div class="description_item_txt">
-                        <h4 class="description_item_heading">Heading goes here</h4>
-                        <p class="description_item_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa debitis ab obcaecati numquam porro fugiat voluptatem, dolorum tempore nobis autem ea magnam odit. Fugiat corporis quae unde eaque inventore excepturi!</p>
+                    <div class="description_inner">
+                        <div class="description_item_txt">
+                            <h4 class="description_item_txt_heading">Heading goes here</h4>
+                            <p class="description_item_txt_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa debitis ab obcaecati numquam porro fugiat voluptatem, dolorum tempore nobis autem ea magnam odit. Fugiat corporis quae unde eaque inventore excepturi!</p>
+                        </div>
+                        <img src="images/top/scr1-half.png" alt="">
                     </div>
-                    <img src="images/top/client-tools-iphone-mobile-half-size.png" alt="">
-                </div>
                 </div>
                 <div class="description_item">
                     <div class="description_inner">
-                    <img src="images/top/scr1-half.png" alt="">
-                    <div class="description_item_txt">
-                        <h4 class="description_item_heading">Heading goes here</h4>
-                        <p class="description_item_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa debitis ab obcaecati numquam porro fugiat voluptatem, dolorum tempore nobis autem ea magnam odit. Fugiat corporis quae unde eaque inventore excepturi!</p>
-                    </div>
+                        <img src="images/top/client-tools-iphone-mobile-half-size.png" alt="">
+                        <div class="description_item_txt">
+                            <h4 class="description_item_txt_heading">Heading goes here</h4>
+                            <p class="description_item_txt_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa debitis ab obcaecati numquam porro fugiat voluptatem, dolorum tempore nobis autem ea magnam odit. Fugiat corporis quae unde eaque inventore excepturi!</p>
+                        </div>
                     </div>
                 </div>
                 <div class="description_item">
                     <div class="description_inner">
                         <div class="description_item_txt">
-                            <h4 class="description_item_heading">Heading goes here</h4>
-                            <p class="description_item_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa debitis ab obcaecati numquam porro fugiat voluptatem, dolorum tempore nobis autem ea magnam odit. Fugiat corporis quae unde eaque inventore excepturi!</p>
+                            <h4 class="description_item_txt_heading">Heading goes here</h4>
+                            <p class="description_item_txt_txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa debitis ab obcaecati numquam porro fugiat voluptatem, dolorum tempore nobis autem ea magnam odit. Fugiat corporis quae unde eaque inventore excepturi!</p>
                         </div>
                         <img src="images/top/client-tools-iphone-mobile-half-size.png" alt="">
                     </div>
                 </div>
-            </div>
+
             </section>
 
             <section class="contact">
+                <div class="contact_inner">
                 <h3 class="contact_title">Get in touch</h3>
 
                 <form action="" class="contact_form">
-                    <label for=""></label>
+                    <p><label for="Name">Name:</label></p>
                     <input type="text">
-                    <label for=""></label>
+                    <p><label for="Email Address">Email Address:</label></p>
                     <input type="text">
-                    <label for=""></label>
+                    <p><label for="Subject">Subject:</label></p>
                     <input type="text">
-                    <label for=""></label>
+                    <p><label for="Message">Message:</label></p>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
 
                     <input type="submit" value="Submit">
@@ -125,7 +128,7 @@
 
 
 
-
+            </div>
             </section>
 
 
