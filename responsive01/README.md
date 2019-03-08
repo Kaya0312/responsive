@@ -72,12 +72,10 @@ npm install svg-sprite
 
 ### 2. Create config.json file  
 
-
 ### 3. Run command  
 svg-sprite -C config.json --shape-transform-svgo svgo.json svg/*.svg  
 
 ### 4. Display on html  
-Example
 ```
 <svg class="logo" role="img">
   <use xlink:href="/assets/svg/sprite.svg#nameOfSVGfile"></use>
