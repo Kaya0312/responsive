@@ -1,17 +1,18 @@
-# Responsive coding practice
+# Responsive coding practice  
+Practice project for responsive coding  
 
-#What I learned:
+# What I learned:
 
 ### Blur background image
 
-`html`
+html
 ```
 <div class="background_image">
-Content
+    Content
 </div>
 ```
 
-`css`
+css
 ```
 .background_image {
     background: url(../images/top.jpg) no-repeat center center;
@@ -35,7 +36,7 @@ Content
 
 ## Align SVG with background with transform property
 
-`html`
+html
 ```
 <div class="icon">
     <svg role="img">
@@ -44,7 +45,7 @@ Content
 </div>
 ```
 
-`css`
+css
 ```
 .icon {
     position: relative;
@@ -84,7 +85,7 @@ npm install svg-sprite
 svg-sprite -C config.json --shape-transform-svgo svgo.json svg/*.svg  
 
 ### 4. Display on html  
-`Example`
+Example
 ```
 <svg class="logo" role="img">
   <use xlink:href="/assets/svg/sprite.svg#nameOfSVGfile"></use>
