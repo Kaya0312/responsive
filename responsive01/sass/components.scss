@@ -1,5 +1,12 @@
 @media screen and (min-width: 1025px) {
 
+    .sp {
+        display: none;
+    }
+    .flex-2 {
+        order: 1;
+    }
+
     .hero::before {
         filter: blur(4px);
         background: inherit;
@@ -20,7 +27,8 @@
         position: relative;
         color: #fff;
         overflow: hidden; 
-        line-height: 1.4;    
+        line-height: 1.4;
+        border-bottom: 6px solid #C54B3C;  
            
     }
 }
@@ -47,9 +55,7 @@
             justify-content: center;
             align-items: center;
             align-content: center;
-            margin: 2rem 0 0 0;
-
-            
+            margin: 2rem 0 0 0;            
 
             svg {
                 width: 2rem;
@@ -79,13 +85,13 @@
             .key_image {
                 overflow: hidden;
 
-                margin-right: 4rem;
-                width: 50rem;
+                margin-right: 8rem;
+                width: 20rem;
             }
         }
 
         &_txt_area {
-           
+           width: 50%;
         }
         &_txt {
             text-shadow: 1px 1px 1px rgba(0,0,0,0.6);
@@ -196,16 +202,16 @@ main {
 
         &_inner {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            max-width: 80%;
 
         }
 
 
 
-
         &_item {
             color: #fff;
+            padding-top: 6rem;
 
             &:first-of-type,
             &:nth-of-type(3) {
@@ -213,8 +219,12 @@ main {
             }
             &:nth-of-type(2) {
                 background: #2B2E37;
-                padding: 4rem 0 0 0;
-            }            
+
+            }
+
+            img {
+                vertical-align: bottom;
+            }
 
             h4 {
                 margin: 0 0 1rem 0;
@@ -225,36 +235,33 @@ main {
                 width: 40px;
                 height: 40px;
                 background: #C54B3C;
-                content: "";
-                display: flex;
-                // align-items: center;
-                flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
-                justify-content: center; /* 子要素をflexboxにより中央に配置する */
-                align-items: center;
                 margin: 0 1rem 0 0;
+                position: relative;
+                // padding: 0.5rem;
+                flex-shrink: 0;
                 
                 svg {
                     fill: #fff;
-                    width: 70%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 20px;
+                    text-align: center;
                 }
 
-                &-raw {
-
-                    svg {
-                        fill: #fff;
-                        width: 10%;
-                    }
-                }
+               
             }
 
+
             &_paragraph {
-                width: 70%;
+                // width: 10rem;
             }
             
             &_txt {
-                // width: 30%;
-                margin-right: auto;
+                width: 50%;
                 display: flex;
+               
 
 
                 &_heading {
@@ -266,8 +273,17 @@ main {
             }
 
             img {
-                width: 400px;
+                align-self: flex-end;
             }
+            img.description_image:first-of-type {
+                width: 400px;
+                
+            }
+            img.description_image_medium {
+                width: 250px;
+                
+            }
+
         }
     }
 
@@ -347,13 +363,22 @@ main {
                 z-index: 0;
                        
         }
+        .hero .copy .app_link_list img {
+            width: 10rem;
+        }
         .hero .copy {
             position: relative;
+        }
+        .hero .copy_txt_area {
+            width: 90%;
         }
         .app_link_list {
             justify-content: center;
         }
 
+        .heading_txt {
+            line-height: 1.4;
+        }
 
     main {
         .product_inner {
@@ -368,6 +393,42 @@ main {
 
             width: 80%;
         }
+        .description_inner {
+            max-width: 90%;
+            flex-direction: column;
+        }
+
+        .description_item {
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            &_txt {
+                flex-direction: column;
+                width: 100%;
+            }
+            &_icon {
+                margin: 0 auto 2rem auto;
+            }
+            h4 {
+                text-align: center;
+            }
+            &_paragraph {
+                margin: 0 0 4rem 0;
+            }
+            &_image {
+                margin: 0 auto;
+
+            }
+        }
+        
+        
+
+        
+        
+        
+
     } 
 }
 @media screen and (max-width:599px) { 
