@@ -5,14 +5,12 @@ Practice project for responsive coding
 
 ### Blur background image
 
-html
 ```
 <div class="background_image">
     Content
 </div>
 ```
 
-css
 ```
 .background_image {
     background: url(../images/top.jpg) no-repeat center center;
@@ -36,7 +34,6 @@ css
 
 ## Align SVG with background with transform property
 
-html
 ```
 <div class="icon">
     <svg role="img">
@@ -45,7 +42,6 @@ html
 </div>
 ```
 
-css
 ```
 .icon {
     position: relative;
@@ -62,13 +58,9 @@ svg {
     fill: #fff;
 }
 ```
-
-## Align SVG with background using Flex
-
-
 ## Generate SVG sprite using npm svg-sprite
 
-Directory structure:  
+Directory structure:    
 /project  
 ├ /assets  
 │ └ /svg // *SVG sprite  
