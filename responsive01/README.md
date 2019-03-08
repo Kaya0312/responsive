@@ -1,13 +1,18 @@
-What I learned:
+# Responsive coding practice
 
-###Blur background image
+#What I learned:
+
+### Blur background image
 
 `html`
+```
 <div class="background_image">
 Content
 </div>
+```
 
 `css`
+```
 .background_image {
     background: url(../images/top.jpg) no-repeat center center;
     background-size: cover;
@@ -26,19 +31,21 @@ Content
     left: -4px;
     right: -4px;
 }
+```
 
-
-##Align SVG with background with transform property
+## Align SVG with background with transform property
 
 `html`
+```
 <div class="icon">
     <svg role="img">
             <use xlink:href="sprite.svg"></use>
     </svg>                                
 </div>
+```
 
 `css`
-
+```
 .icon {
     position: relative;
     width: 60px;
@@ -53,30 +60,33 @@ svg {
     transform: translate(-50%, -50%);
     fill: #fff;
 }
+```
 
-##Align SVG with background using Flex
-
-
-##Generate SVG sprite using npm svg-sprite
-
-Directory structure:
-/project
-├ /assets
-│ └ /svg // *SVG sprite
-├ /svg  // *svg files
-└ index.html
-
-###1. Install svg-sprite
-npm install svg-sprite
-
-###2. Create config.json file
+## Align SVG with background using Flex
 
 
-###3. Run command
-svg-sprite -C config.json --shape-transform-svgo svgo.json svg/*.svg
+## Generate SVG sprite using npm svg-sprite
 
-###4. Display on html
+Directory structure:  
+/project  
+├ /assets  
+│ └ /svg // *SVG sprite  
+├ /svg  // *svg files  
+└ index.html  
+
+### 1. Install svg-sprite  
+npm install svg-sprite    
+
+### 2. Create config.json file  
+
+
+### 3. Run command  
+svg-sprite -C config.json --shape-transform-svgo svgo.json svg/*.svg  
+
+### 4. Display on html  
 `Example`
+```
 <svg class="logo" role="img">
   <use xlink:href="/assets/svg/sprite.svg#nameOfSVGfile"></use>
 </svg>
+```
