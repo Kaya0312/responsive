@@ -1,14 +1,140 @@
-
+.btn {
+    padding: 0.5rem;
+}
 header {
+    display: flex;
+    box-sizing: border-box;
 
+    .header_logo {
+        margin-right: auto;
+        display: flex;
+        align-items: top;
+        position: relative;
+        width: 100px;
+        overflow: hidden;
+
+        img {
+           position: absolute;
+        //    top:  50%;
+        //    left: 50%;
+        }
+    }
+    .user_nav {
+        display: flex;
+        justify-content: space-between;
+        width: 30%;
+        text-transform: uppercase;
+
+        
+        a {
+            padding: 2rem 0;
+            color: #C6C8C7;
+            text-decoration: none;
+            display: block;
+
+            &:hover {
+                color: var(--pink);
+                border-top: 3px solid var(--pink);
+            }
+        }
+    }
 }
 .hero {
+    display: flex;
 
+        background: url(../images/top/main.jpg);
+
+
+        background-size: cover;
+        height: 60vh;
+        position: relative;
+        color: #fff;
+        overflow: hidden; 
+        line-height: 1.4;
+        text-align: center;
+
+        &::before {
+            
+                content: '';
+                position: absolute;
+                top: -8px;
+                right: -8px;
+                bottom: -8px;
+                left: -8px;
+                background-color: var(--primary_color);
+                filter: blur(8px);
+                opacity: 0.9;
+                       
+        }
+
+        &_inner {
+            z-index: 10;
+        }
+
+
+    // justify-content: space-between;
+
+    &_paragraph {
+        width: 40%;
+        margin-right: auto;
+    }
+
+    &_image {
+        img {
+            width: 30%;
+        }
+    }
 }
 main {
 
     .description {
         color: var(--primary_color);
+    }
+
+    .notification {
+        padding: 4rem 0;
+
+        &_block {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+
+            margin: 0 auto;
+
+            input[type="text"] {
+                border: 1px solid #E4E4E4;
+                background: #EEEEEE;
+                padding: 0.5rem;
+            }
+            input[type="button"] {
+                border: none;
+                background: var(--pink);
+                text-transform: uppercase;
+                color: #fff;
+                padding: 0.5rem 2rem;
+                font-size: 80%;
+                font-weight: bold;
+            }
+        }
+    }
+    .title {
+        padding: 4rem 0;
+
+        &_heading {
+            color: #fff;
+            font-size: 300%;
+            text-transform: uppercase;
+
+            &:before {
+                content: open-quote;
+                font-size: 200%;
+            }
+            &:after {
+                content: close-quote;
+                font-size: 200%;
+            }
+        }
     }
 
     .product {
