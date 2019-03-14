@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary_color: #7BD9BF;
   --light-grey: #F0F0F0;
@@ -91,7 +92,8 @@ header {
       padding: 2rem 0;
       color: #C6C8C7;
       text-decoration: none;
-      display: block; }
+      display: block;
+      border-top: 3px solid #fff; }
       header .user_nav a:hover {
         color: var(--pink);
         border-top: 3px solid var(--pink); }
@@ -181,29 +183,33 @@ main .notification {
     font-size: 200%; }
     main .notification_heading span {
       color: var(--pink); }
-  main .notification_label {
-    color: var(--primary_color);
-    text-transform: uppercase; }
   main .notification_block {
     display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    margin: 0 auto; }
-    main .notification_block input[type="text"] {
-      border: 1px solid #E4E4E4;
-      background: #EEEEEE;
-      margin: 0 2rem;
-      padding: 1rem;
-      width: 60rem; }
-    main .notification_block input[type="button"] {
-      border: none;
-      background: var(--pink);
-      text-transform: uppercase;
-      color: #fff;
-      padding: 1rem 2rem;
-      font-size: 80%;
-      font-weight: bold; }
+    align-items: stretch;
+    flex-wrap: wrap;
+    flex: 1 1 100%;
+    text-align: center; }
+  main .notification_label {
+    color: var(--primary_color);
+    text-transform: uppercase;
+    align-self: center; }
+  main .notification input[type="text"] {
+    border: 1px solid #E4E4E4;
+    background: #EEEEEE;
+    margin: 0 2rem;
+    padding: 1rem;
+    display: inline;
+    width: 20em;
+    flex: 1; }
+  main .notification input[type="button"] {
+    border: none;
+    background: var(--pink);
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 80%;
+    font-weight: bold;
+    flex: none; }
 
 main .title {
   padding: 4rem 0; }
@@ -366,3 +372,84 @@ footer {
   color: #fff;
   text-align: center;
   padding: 0.5rem 0; }
+
+@media screen and (max-width: 600px) and (max-width: 1024px) {
+  .notification_block {
+    padding: 0 2rem; }
+  .notification_label {
+    clear: both; } }
+
+@media screen and (max-width: 599px) {
+  header main .notification input[type="button"] {
+    flex: 1 1 50;
+    align-self: center;
+    align-items: center;
+    align-content: center; }
+  .hero_inner {
+    flex-direction: column; }
+  .hero_paragraph {
+    text-align: center;
+    width: 100%; }
+  .hero_paragraph_features_list {
+    display: none; }
+  .hero .hero_paragraph_sns_list {
+    justify-content: center; }
+  .hero .hero_image {
+    margin-bottom: -20px; }
+  main ul.product_lists {
+    display: none; }
+  main .product_list {
+    flex-direction: column; }
+    main .product_list_image {
+      margin-bottom: 4rem; }
+  main .features_item {
+    padding: 2rem; }
+  main .features_block {
+    flex-direction: column;
+    text-align: center; }
+  main .features_icon {
+    margin: 0; }
+  main .features_block:nth-of-type(2) .features_paragraph {
+    order: 2; }
+  main .contact_content .inner {
+    padding: 2rem;
+    width: 100%; } }
+
+/* */
+header nav {
+  margin-right: -16px; }
+
+header nav ul {
+  display: flex;
+  align-items: center; }
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 16px; }
+
+#nav_toggle {
+  display: none; }
+
+/*メニュー部分*/
+@media screen and (max-width: 960px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    width: 100%;
+    background: #006598;
+    left: 0; }
+  header nav ul {
+    display: block;
+    margin: 0 auto;
+    width: 90%; }
+  header nav ul li {
+    margin: 0 auto;
+    text-align: center;
+    border-bottom: 1px solid #fff; }
+  header nav ul li:last-child {
+    border: none; }
+  header nav ul li a {
+    display: block; } }
